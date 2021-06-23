@@ -47,7 +47,7 @@ nav ul {
 
 nav ul li {
     display: inline-block;
-    float: left;
+    /*float: left;*/
 }
 
 nav ul li:not(:first-child) {
@@ -89,6 +89,7 @@ nav ul li a {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 100px;
 }
 
 .left{
@@ -96,6 +97,7 @@ nav ul li a {
     height: 400px;
     background: url(shiva.png) no-repeat center/ cover;
     border-radius: 10px;
+    z-index: 1;
 }
 
 .right{
@@ -105,10 +107,11 @@ nav ul li a {
     display: flex;
     align-items: left;
     justify-content: left;
-    padding: 20px 30px;
+    padding: 20px 60px;
     border-radius: 8px;
     color: #fff;
     margin: -40px;
+    box-shadow: 0 0 4px #fff;
 }
 
 .right h1{
@@ -294,7 +297,15 @@ nav ul li a {
 
     .logo {
         padding: 0;
-  }
+   }
+
+   .scroll-downs {
+       display: none;
+   }
+
+   .lending{
+       margin-top: 90px;
+   }
 
   .nav-wrapper {
         position: fixed;
@@ -396,13 +407,14 @@ nav ul li a {
 
     .left{
         width: 100%;
-        height: 500px;
+        height: 300px;
     }
 
     .right{
         width: 90%;
         margin: 0;
         margin-top: -50px;
+        padding: 60px 20px;
     }
 
 
